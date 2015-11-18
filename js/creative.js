@@ -29,18 +29,39 @@
 
     // Fit Text Plugin for Main Header
     $("h1").fitText(
-        1.2, {
+        0.8, {
             minFontSize: '35px',
-            maxFontSize: '65px'
+            maxFontSize: '100px'
         }
     );
+
+    $(".header-content-inner p").fitText(
+        2.5, {
+            minFontSize: '14px',
+            maxFontSize: '22px'
+        }
+    );
+
+    function setJumbotrumSize(){
+        var $window = $(window);
+        var w = $window.width()
+        if(w > 750)
+            $('#video-background').height('100%');
+        else
+            $('#video-background').height($('.header-content').outerHeight());
+    }
+    
+    setJumbotrumSize();
+    // Bind event listener
+    $(window).resize(setJumbotrumSize);
+
 
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
             top: 100
         }
-    })
+    });
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();

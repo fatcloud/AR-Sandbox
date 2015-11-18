@@ -172,13 +172,23 @@ aside {
     }
 }
 
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    
+    overflow: hidden;
+}
+
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    /*background-image: url(../img/header.jpg);*/
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
