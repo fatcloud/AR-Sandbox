@@ -42,20 +42,6 @@
         }
     );
 
-    function setJumbotrumSize(){
-        var $window = $(window);
-        var w = $window.width()
-        if(w > 750)
-            $('#video-background').height('100%');
-        else
-            $('#video-background').height($('.header-content').outerHeight());
-    }
-    
-    setJumbotrumSize();
-    // Bind event listener
-    $(window).resize(setJumbotrumSize);
-
-
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
