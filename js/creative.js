@@ -42,6 +42,17 @@
         }
     );
 
+    function setJumbotrumSize(){
+        $('#video-background').css({
+            minHeight: $('header').height(),
+            minWidth:  $('header').width(),
+        });
+    }
+    
+    setJumbotrumSize();
+    // Bind event listener
+    $(window).resize(setJumbotrumSize);
+
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
