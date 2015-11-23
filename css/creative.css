@@ -55,6 +55,10 @@ p {
     background-color: #f05f40;
 }
 
+.clearance {
+    height: 5px;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
