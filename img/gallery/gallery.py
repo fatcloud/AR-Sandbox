@@ -1,6 +1,6 @@
 
 import cv2
-from os import listdir
+from os import listdir, makedirs
 from os.path import isdir
 import importlib
 import sys
@@ -8,16 +8,18 @@ import shutil
 
 
 # make directories
-shutil.rmtree('display')
-os.makedirs('display')
+if 'display' in listdir('.'):
+	shutil.rmtree('display')
+makedirs('display')
 
-shutil.rmtree('thumbnails')
-os.makedirs('thumbnails')
+if 'thumbnails' in listdir('.'):
+	shutil.rmtree('thumbnails')
+makedirs('thumbnails')
 
 
 # define output image size (ad-hoc here)
 
-thumbnail_shape = (350.0, 650.0)
+thumbnail_shape = (650,366)
 display_height  = 600.0
 
 # prepare the html section to be paste in index.html
@@ -39,13 +41,13 @@ for pic_name in pic_names:
 
 	display_ratio = display_height/image.shape[0]
 	display_image = cv2.resize(image, (0,0), fx=display_ratio, fy=display_ratio)
-	cv2.imwrite('display/'+ pic_name, display_image, 70)
+	cv2.imwrite('display/'+ pic_name, display_image, (cv2.IMWRITE_JPEG_QUALITY, 70))
 
 	# generate and save thumbnails
 
-	thumbnail_ratio = max(thumbnail_shape[1]/image.shape[1], thumbnail_shape[0]/image.shape[0])
-	thumbnail_image = cv2.resize(image, (0,0), fx=thumbnail_ratio,fy=thumbnail_ratio)
-	cv2.imwrite('thumbnails/'+ pic_name, thumbnail_image, 70)
+	#thumbnail_ratio = max(thumbnail_shape[1]/image.shape[1], thumbnail_shape[0]/image.shape[0])
+	thumbnail_image = cv2.resize(image, thumbnail_shape)
+	cv2.imwrite('thumbnails/'+ pic_name, thumbnail_image, (cv2.IMWRITE_JPEG_QUALITY, 70))
 
 	# generate the html code to be paste in index.html
 
