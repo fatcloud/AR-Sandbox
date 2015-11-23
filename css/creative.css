@@ -472,6 +472,10 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 30px;
 }
 
+.icon-btn {
+    padding-left: 23px;
+}
+
 ::-moz-selection {
     text-shadow: none;
     color: #fff;
