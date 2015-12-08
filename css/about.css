@@ -1,0 +1,42 @@
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.main-text{
+    
+}
+
+#intro{
+    padding: 100px;
+}
+
+.simpleblock {
+    height: 100vh;
+    padding: 0px;
+}
+
+
+.paint {
+    
+}
+
+img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row{
+    padding: 0px;
+}
+
+.foot-note{
+    color: #ddd;
+    position:absolute;
+    right:0px;
+    bottom:0px
+}
