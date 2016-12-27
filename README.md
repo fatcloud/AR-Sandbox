@@ -1,26 +1,38 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/)
+# 地貌沙箱解說
 
-[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+這份文件提供地貌沙箱的導覽
 
-## Getting Started
 
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+## 簡單的講解素材
 
-## Bugs and Issues
+- 這個裝置叫做**地貌沙箱**，這個系統會用相機去抓取沙面高度，再用投影機幫沙子投上分層設色圖。只要在沙子上捏出起伏，表面的顏色就會即時產生變化。
+- 此時可以挖起一塊拳頭大的沙，輕輕拋到淺藍色的淺海處，立刻就會突起型形成一個明顯的島嶼
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
+- 另外如果你把手放在離地約三十公分的高度，它就會像一朵雲一樣開始向正下方降雨。
+- 可以在沙面上挖出河道，伸手在上方降雨就能看到水流沿著河道蔓延
 
-## Creator
+- 通常能引起大家驚嘆的小實驗：先挖一個飯碗大的洞，伸手降雨在洞裡使之積水，再挖一塊拳頭大的土塊丟進洞裡，就可以看到土塊把水「擠」出坑外。
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+## 容易被問到的問題
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+
+### 沙子的材質？
+
+- 小孩子玩的動力沙，安全玩具，如果對方對沙的牌子有興趣的話，它是台灣製造的 Tumbling 動力沙。
+
+
+### 這是什麼原理？
+
+  這是個非常模糊的問題，坦白說我也不知道怎麼回答
+
+
+### 能不能做到這個做到那個
+
+  可以，通通都可以，
+
+
+
+
