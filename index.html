@@ -21,9 +21,10 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/full-slider.css" type="text/css">
+    <link rel="stylesheet" href="css/parallax.css" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,7 +33,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .parallax-caption {
+          position: relative;
+          left: 0;
+          text-align: center;
+          color: black;
+          top: 50%;
+          width: 100%;
+        }
 
+        .parallax-caption span.border {
+          background-color: #111;
+          color: #fff;
+          padding: 18px;
+          font-size: 25px;
+          letter-spacing: 10px;
+        }
+
+    </style>
 </head>
 
 <body id="page-top">
@@ -69,38 +88,48 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div id="video-background">
-        <span id="hs_cos_wrapper_videos_in_html" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html">
-        <video poster="video/jumbo.jpg" autoplay="true" loop="true">
-            <!--
-            <source src="video/jumbo_mute.mp4" type="video/mp4">
-            <source src="video/jumbo_mute.webm" type="video/webm">
-            <source src="video/jumbo_mute.ogv" type="video/ogg">
-            -->
-        </video>
-        </span>
-    </div>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>來玩沙吧!</h1>
-                <hr>
-                <p>融合了深度感應與回饋投影技術的地貌投影箱<br>
-                            隨時製造出人意表的即時互動體驗</p>
-                <ul class="list-inline">
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=JMh-8dndAyI" target="_blank" class="btn btn-primary btn-xl page-scroll icon-btn">
-                            <i class="fa fa-fw fa-play-circle-o fa-lg"></i>
-                            觀看影片
-                        </a>
-                    </li>
-                    
-                </ul>
-				
-				
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/carousel/bg1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/carousel/bg2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/carousel/bg3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
     </header>
 
     <section class="bg-primary" id="about">
@@ -130,6 +159,24 @@
             </div>
         </div>
     </section>
+
+    <div class="parallax" style="background-image: url('../img/parallex/bg-before.jpg')">
+        <div class="parallax-caption">
+            <span class="border">
+                普通的沙坑對多數的孩子而言，已經是個非常耐玩有趣的遊樂設施。
+            </span>
+        </div>
+    </div>
+
+
+    <div class="parallax" style="background-image: url('../img/parallex/bg-after.jpg')">
+        <div class="parallax-caption">
+            <span class="border">
+                而地貌沙箱會依據沙堆的起伏，即時在沙面投影出高山湖泊等各種地貌。
+            </span>
+        </div>
+    </div>
+
 
     <section id="user-story">
         <div class="container">
@@ -330,3 +377,4 @@
 </body>
 
 </html>
+
